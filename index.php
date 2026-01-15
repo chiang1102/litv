@@ -9,7 +9,7 @@ if (isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] === '/health') {
     die("OK");
 }
 
-$valid_token = getenv('APP_TOKEN') ?: "0971889022";
+$valid_token = getenv('APP_TOKEN') ?: "0418";
 $user_token = $_GET['token'] ?? ''; 
 
 if ($user_token !== $valid_token) {
